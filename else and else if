@@ -1,0 +1,17 @@
+var fillcolor = "pink"
+
+function setup() {
+  createCanvas(640, 480);
+}
+
+function draw() {
+  fill(fillcolor)
+  ellipse(mouseX, mouseY, 80, 80);
+  if (mouseIsPressed) {
+    fillcolor = 'blue'
+  } else if (keyIsPressed) {
+    fillcolor = 'yellow'
+  } else{
+    fillcolor = 'pink'
+  }
+}
